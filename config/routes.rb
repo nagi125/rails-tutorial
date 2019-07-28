@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  # User
-  get 'users/new'
-  get '/signup',  to: 'users#new'
+  # sing-up
+  get  '/signup',  to: 'users#new'
+  post '/signup',  to: 'users#create'
 
   # static_pages
   root 'static_pages#home'
@@ -11,5 +11,8 @@ Rails.application.routes.draw do
 
   get 'foo/bar'
   get 'foo/baz'
-  resources :microposts
+
+  # Users
+  resources :users
+  # resources :microposts
 end
