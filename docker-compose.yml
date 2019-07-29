@@ -40,4 +40,3 @@ services:
       - ./docker/db/sql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
-
