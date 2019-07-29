@@ -3,7 +3,6 @@
 I="\e[1;32m::\e[00m"
 
 # echo -e "$I Setup / db:setup, db:migrate"
-rails db:create
 rails db:schema:load
 
 echo -e "$I Starting Rails Server..."
