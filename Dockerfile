@@ -4,7 +4,7 @@ ENV TZ Asia/Tokyo
 ENV RAILS_ENV development
 
 RUN apt-get update -qq && \
-    apt-get install --no-install-recommends -y build-essential libpq-dev nodejs mysql-client && \
+    apt-get install --no-install-recommends -y build-essential libpq-dev nodejs default-mysql-client && \
     apt-get clean && \
     rm -rf /var/cache/apt
 RUN gem install bundler
