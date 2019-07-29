@@ -3,7 +3,8 @@
 I="\e[1;32m::\e[00m"
 
 # echo -e "$I Setup / db:setup, db:migrate"
-# bundle exec rails db:setup
+rails db:create
+rails db:schema:load
 
 echo -e "$I Starting Rails Server..."
 rm -f /app/tmp/pids/server.pid
